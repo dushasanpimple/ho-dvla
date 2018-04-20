@@ -1,0 +1,82 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Verify make and colour of list of Vehicles",
+        "description": "",
+        "id": "check-the-vehicles--with-dvla-and-assert-on-the-make-and-colour-of-the-vehicle-which-reads-from-the;verify-make-and-colour-of-list-of-vehicles",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7401309045,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to the dvla page",
+            "match": {
+              "location": "CommonStep.navigateToPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 945240595,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I start the vehicle check",
+            "match": {
+              "location": "CommonStep.startVehicleCheck()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64717942087,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify all the vehicles in \u0027verify.filetype\u0027 files from the list of files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "verify.filetype",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleCheckSteps.verifyVechiles(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6680549,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "print out the results to a file",
+            "match": {
+              "location": "VehicleCheckSteps.printResult()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check the vehicles  with DVLA and assert on the make and colour of the vehicle which reads from the",
+    "description": "       CSV or XLS file configured in Config file",
+    "id": "check-the-vehicles--with-dvla-and-assert-on-the-make-and-colour-of-the-vehicle-which-reads-from-the",
+    "keyword": "Feature",
+    "uri": "vehicleCheck.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@dvla"
+      }
+    ]
+  }
+]
